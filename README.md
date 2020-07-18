@@ -1,16 +1,10 @@
-# all_about_tea
+#### All about tea - A tea directory :tea: 
 
-A new Flutter project.
+The application was built to get familiar with the flutter environment, using widgets and packages.
 
-## Getting Started
+#### Resources:
+* SVG - [unDraw](https://undraw.co/), [DrawKit](https://www.drawkit.io/), [Icons8](https://icons8.com)
+* [Some Awesome Tea Recipes](https://food.ndtv.com/lists/8-best-tea-recipes-get-creative-with-chai-1728465)
+* [Some Facts](https://www.teapeople.co.uk/types-of-tea)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+#### Working:
