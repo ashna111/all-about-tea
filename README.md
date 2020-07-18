@@ -8,3 +8,6 @@ The application was built to get familiar with the flutter environment, using wi
 * [Some Facts](https://www.teapeople.co.uk/types-of-tea)
 
 #### Working:
+<div align="center">
+  <img src='output.gif' width=230px/>
+</div>
