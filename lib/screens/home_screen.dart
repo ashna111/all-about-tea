@@ -32,16 +32,106 @@ class HomePage extends StatelessWidget {
                 child: Padding(
                   padding: EdgeInsets.all(10.0),
                   child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
-                      Text(recipes[index].title),
-                      Text('Cooking Time: ${recipes[index].cookTime}'),
-                      Text('Ingredients:'),
-                      Bulletin(
-                        tasks: recipes[index].ingredients,
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          recipes[index].title,
+                          textAlign: TextAlign.right,
+                          style: TextStyle(
+                            fontFamily: 'Alegreya',
+                            fontSize: 20.0,
+                            color: Color(0xff3E3407),
+                          ),
+                        ),
                       ),
-                      Text('Process:'),
-                      Bulletin(
-                        tasks: recipes[index].process,
+                      Align(
+                        alignment: Alignment.centerLeft,
+                        child: Text(
+                          '${recipes[index].cookTime}',
+                          style: TextStyle(
+                            fontFamily: 'Alegreya',
+                            fontSize: 18.0,
+                            color: Color(0xff567119),
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Color(0xffA3A53F).withOpacity(0.2),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10.0),
+                              topRight: Radius.circular(10.0)),
+                        ),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Ingredients:',
+                            style: TextStyle(
+                              fontFamily: 'Alegreya',
+                              fontSize: 18.0,
+                              color: Color(0xff212121),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xffA3A53F).withOpacity(0.2),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(10.0),
+                              bottomRight: Radius.circular(10.0)),
+                        ),
+                        padding: EdgeInsets.all(10.0),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Bulletin(
+                            tasks: recipes[index].ingredients,
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10.0,
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Color(0xff657119).withOpacity(0.2),
+                          borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(10.0),
+                              topRight: Radius.circular(10.0)),
+                        ),
+                        child: Align(
+                          alignment: Alignment.center,
+                          child: Text(
+                            'Process:',
+                            style: TextStyle(
+                              fontFamily: 'Alegreya',
+                              fontSize: 18.0,
+                              color: Color(0xff212121),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Container(
+                        padding: EdgeInsets.all(10.0),
+                        decoration: BoxDecoration(
+                          color: Color(0xff657119).withOpacity(0.2),
+                          borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(10.0),
+                              bottomRight: Radius.circular(10.0)),
+                        ),
+                        child: Align(
+                          alignment: Alignment.centerLeft,
+                          child: Bulletin(
+                            tasks: recipes[index].process,
+                          ),
+                        ),
                       ),
                     ],
                   ),

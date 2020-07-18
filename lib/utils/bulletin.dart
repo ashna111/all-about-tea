@@ -11,7 +11,17 @@ class Bulletin extends StatelessWidget {
       primary: false,
       shrinkWrap: true,
       itemBuilder: (context, index) {
-        return Text(tasks[index]);
+        return Align(
+          alignment: Alignment.centerLeft,
+          child: Text(
+            tasks[index],
+            style: TextStyle(
+              fontFamily: 'Alegreya',
+              fontSize: 16.0,
+              color: Color(0xff212121),
+            ),
+          ),
+        );
       },
       itemCount: tasks.length,
     );

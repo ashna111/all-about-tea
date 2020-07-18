@@ -30,7 +30,7 @@ class InformationPage extends StatelessWidget {
                     padding: EdgeInsets.all(10.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Color(0xffA3AF3F).withOpacity(0.5),
+                      color: Color(0xffA3AF3F).withOpacity(0.2),
                     ),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
