@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'info_screen.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -10,7 +11,11 @@ class HomePage extends StatelessWidget {
           color: Colors.white,
         ),
         backgroundColor: Color(0xff3E3407),
-        onPressed: null,
+        tooltip: "Facts",
+        onPressed: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => InformationPage()));
+        },
       ),
     );
   }
